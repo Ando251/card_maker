@@ -10,6 +10,8 @@
 body, html {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
 }
 
 * {
@@ -18,9 +20,8 @@ body, html {
 
 .bg-img {
   
-  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 
-  min-height: 380px;
+  min-height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,9 +31,10 @@ body, html {
 
 .container {
   position: absolute;
+
   right: 0;
   margin: 20px;
-  max-width: 300px;
+  max-width: 600px;
   padding: 16px;
   background-color: white;
 }
@@ -69,17 +71,26 @@ input[type=text]:focus, input[type=password]:focus {
 </style>
 
 <body>
+    
     <div class="bg-img">
         <form action="/action_page.php" class="container">
-          <h1>Login</h1>
+          <h1>Sign up</h1>
       
+          <label for="Name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="Name" required>
+          <label for="Business name"><b>Business Name</b></label>
+          <input type="text" placeholder="Enter Business Name" name="Business Name" required>
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
+          <label for="Username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="Username" required>
       
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="psw"><b>Confirm Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
       
-          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn">Sign Up</button>
         </form>
       </div>
       
