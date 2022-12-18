@@ -1,0 +1,79 @@
+.container {
+	left: 0;
+	margin-top: -104px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+ }
+ 
+.card {
+	background-color: #333;
+	border: 4px solid #555;
+	border-left-color: #777;
+	border-top-color: #777;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	height: 180px;
+	margin: auto;
+	padding: 10px;
+	width: 380px;
+ }
+ 
+.avatar {
+	background: #EEE url('http://placepic.me/avatars/250-250') center center;
+	background-size: cover;
+	border-radius: 50%;
+	border: solid #555 5px;
+	display: inline-block;
+	filter: alpha(opacity=85);
+	height: 95%;
+	margin: 0px;
+	opacity: 0.85;
+	width: 45%;
+ }
+ 
+.details {
+	background: #555;
+	color: #FFF;
+	display: block;
+	float: right;
+	height: 88%;
+	margin: 0px;
+	padding: 10px;
+	width: 45%;
+ }
+ 
+	.details h1 {
+		font-size: 1.4em;
+		line-height: 91%;
+		overflow: hidden;
+		text-align: center;
+		text-transform: lowercase;
+	 }
+ 
+	.details h2 {
+		font-size: 0.8em;
+		font-weight: 100;
+		line-height: 92%;
+		text-align: center;
+		text-transform: lowercase;
+	 }
+ 
+	.details a {
+		color: #EEE;
+		text-decoration: none;
+	 }
+ 
+		.details a:hover {
+			color: #FFF;
+			text-decoration: underline;
+		 }
+ 
+	.details dt, .details dd {
+		color: #EEE;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+		width: 32%;
+	 }
