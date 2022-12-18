@@ -20,7 +20,9 @@ const port=8080
 
 fs.readFile('one.html',function(error,one){
     fs.readFile('signup.html',function(error,signup){
-    fs.readFile('log.html',function(error,log){
+    fs.readFile('log.html',function(error,log){  
+    fs.readFile('input.html',function(error,input){
+    fs.readFile('template.html',function(error,template){
     server=http.createServer(function(req,res){
         if(req.url=='/'){
             res.writeHead(200,{"Content-Type":"text/html"});
@@ -37,10 +39,22 @@ fs.readFile('one.html',function(error,one){
             res.write(log);
             res.end();
         }
+        else if(req.url=='/input'){
+            res.writeHead(200,{"Content-Type":"text/html"});
+            res.write(input);
+            res.end();
+        }
+        else if(req.url=='/template'){
+            res.writeHead(200,{"Content-Type":"text/html"});
+            res.write(template);
+            res.end();
+        }
         else
             res.end("404 not found");
     });
     server.listen(port);
+});
+});
 });
 });
 });
